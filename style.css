@@ -1,0 +1,364 @@
+/* ======= IMPORTAÇÃO DE FONTES ======= */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+/* ======= RESET E CONFIGURAÇÕES GERAIS ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f3f1f6;
+  color: #222;
+}
+
+/* ======= CONTEÚDO PRINCIPAL ======= */
+main {
+  flex: 1;
+  margin: 32px auto;
+  background: #f3f1f6;
+  border-radius: 10px;
+  padding: 24px 32px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+/* ======= TÍTULOS E TEXTOS PRINCIPAIS ======= */
+.container h1 {
+  font-family: "Nabla", system-ui;
+  font-size: 40px;
+}
+
+#inicio {
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+}
+
+#bem-vindo {
+  font-family: "Righteous", cursive;
+  font-weight: normal;
+  font-size: 64px;
+  color: #000000;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  font-size: 1.6em;
+  color: #223366;
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+/* ======= NAVEGAÇÃO ======= */
+nav {
+  background-color: #223366;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+/* ======= ELEMENTOS DE TEXTO E CONTEÚDO ======= */
+h2 {
+  color: #223366;
+  margin-bottom: 12px;
+}
+
+.card {
+  background: #f5f7fa;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px #0001;
+}
+
+/* ======= FORMULÁRIOS ======= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background: #223366;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 6px;
+}
+
+button[type="submit"]:hover {
+  background: #ffb347;
+  color: #223366;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #223366;
+  color: #fff;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 4px 18px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .logo {
+    height: 38px;
+  }
+}
+
+/* ======= SEÇÃO #INICIO COM DIVISÃO DE CONTEÚDO E IMAGEM ======= */
+#inicio .headline {
+  flex: 40%;
+  text-align: center;
+  justify-content: center;
+  margin-right: 50%;
+}
+
+#inicio .img-headline {
+  flex: 40%;
+  text-align: center;
+  margin-left: 50%;
+  max-width: 30%;
+}
+
+/* ======= ABAS DE CONTEÚDO ======= */
+.tab-content {
+  display: none;
+  margin-top: 16px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px 3px 0 0;
+}
+
+/* ======= CONTEÚDO VISUAL (CABECALHO E PRINCIPAL) ======= */
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1px;
+  flex-wrap: wrap;
+}
+
+.conteudo {
+  color: #FFF2E7;
+  border-top: 2px solid rgba(255, 242, 231, 0.3);
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 48px;
+  padding: 32px 16px;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Righteous", cursive;
+  font-size: 64px;
+  color: #1E2A38;
+  text-align: left;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Sarala", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #1E2A38;
+  text-align: left;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #1E2A38;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Sarala", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgb(25, 24, 24);
+  transform: scale(1.1);
+}
+
+.conteudo-principal-imagem {
+  height: 420px;
+  margin: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ======= RESPONSIVO: MENU E CONTEÚDO ======= */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #223366;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .menu.ativo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #223366;
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .cabecalho {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu.ativo .tab-btn {
+    background-color: #1a2a55;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .menu.ativo .tab-btn:hover {
+    background-color: #1a2a55;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 16px;
+    margin: 16px 8px;
+  }
+
+  .conteudo-principal {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .conteudo-principal-escrito {
+    text-align: center;
+    align-items: center;
+  }
+
+  .conteudo-principal-escrito-titulo,
+  .conteudo-principal-escrito-subtitulo {
+    text-align: center;
+  }
+
+  .conteudo-principal-imagem {
+    height: 240px;
+    width: auto;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Software - FPB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <header class="cabecalho">
+            <img src="assets/logo-fabrica.png" draggable="false" alt="Logo Fábrica de Software FPB" class="logo">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <button class="tab-btn active" data-tab="inicio">Tela Inicial</button>
+                <button class="tab-btn" data-tab="participantes">Participantes</button>
+                <button class="tab-btn" data-tab="projetos">Projetos</button>
+                <button class="tab-btn" data-tab="contato">Contato</button>
+            </div>
+        </header>
+    </nav>
+
+    <main>
+        <section id="inicio" class="tab-content active conteudo">
+            <div class="conteudo-principal">
+                <div class="conteudo-principal-escrito">
+                    <h1 class="conteudo-principal-escrito-titulo">Fábrica de Software</h1>
+                    <h2 class="conteudo-principal-escrito-subtitulo">
+                        Bem-vindo! <br>
+                        Este é o site institucional da Fábrica de Software da FPB. Conheça nossos <br>
+                        participantes, projetos e entre em contato!
+                    </h2>
+                    <button class="conteudo-principal-escrito-botao" onclick="window.location.href=''">
+                        Projetos!
+                    </button>
+                </div>
+                <img class="conteudo-principal-imagem" src="assets/vector.jpg" draggable="false" alt="Logo">
+            </div>
+        </section>
+
+        <section id="participantes" class="tab-content">
+            <h2>Participantes</h2>
+            <div class="card"><strong>Prof. Demetrius De Castro Do Amaral</strong> (Professor Orientador)<br>Email: demdecastro@gmail.com<br>Coordenador da fábrica de Software.</div>
+            <div class="card"><strong>Thayná Bezerra Lucena</strong> (Gerente de Projeto)<br>Email: teste.teste@fpb.edu.br<br>Planejamento, acompanhamento e controle das entregas do projeto.</div>
+            <div class="card"><strong>Yuri Leite Cortes Da Silva</strong> (Analista)<br>Email: teste.teste@fpb.edu.br<br>Análise de dados e processos para apoiar a tomada de decisões.</div>
+            <div class="card"><strong>Sophia dos Santos Silva</strong> (Back-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da estrutura lógica e servidores dos sistemas.</div>
+            <div class="card"><strong>Luiz Gabriel Nascimento Carvalho</strong> (Front-End)<br>Email: Luizgabriel1334@gmail.com<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Kennedy Oliveira Pires Da Silva</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Gabriel Santos de Medeiros Costa</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Emanuel viktor de souza Bezerra</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Wagner Damião da Silva Franco</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>João Victor Pereira</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Andriel Lucas dos Santos Silva</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+            <div class="card"><strong>Víctor Maximino De Souza</strong> (Front-End)<br>Email: teste.teste@fpb.edu.br<br>Desenvolvimento e manutenção da interface dos sistemas.</div>
+        </section>
+
+        <section id="projetos" class="tab-content">
+            <h2>Projetos</h2>
+            <div class="card"><strong>PDV Fiscal</strong> <span style="color:#555;">[Em andamento]</span><br>Sistema de ponto de venda com controle fiscal, focado em vendas, emissão de cupons e gestão de estoque.</div>
+            <div class="card"><strong>Site Fabrica</strong> <span style="color:#555;">[Concluído]</span><br>Site para divulgação dos projetos acadêmicos.</div>
+            <div class="card"><strong>E-commerce</strong> <span style="color:#555;">[Em andamento]</span><br>Loja virtual para compra e venda de produtos online, com carrinho, cadastro de clientes e pagamentos.</div>
+            <div class="card"><strong>Imobiliária</strong> <span style="color:#555;">[Em andamento]</span><br>Plataforma para cadastro e busca de imóveis, com informações, imagens e contato com corretores.</div>
+            <div class="card"><strong>Advogados</strong> <span style="color:#555;">[Em andamento]</span><br>Sistema de gestão de processos jurídicos, clientes e prazos, voltado para escritórios de advocacia.</div>
+        </section>
+
+        <section id="contato" class="tab-content">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <hr>
+            <strong>Exemplo de mensagens recebidas:</strong>
+            <div class="card"><strong>João Teste</strong> (joao@teste.com)<br>Gostaria de saber mais sobre os projetos.<br><small>Enviado em: 27/04/2025, 14:30:00</small></div>
+            <div class="card"><strong>Lucia Cliente</strong> (lucia@empresa.com)<br>Parabéns pelo trabalho da fábrica!<br><small>Enviado em: 27/04/2025, 16:00:00</small></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fábrica de Software - FPB</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('ativo');
+        }
+    </script>
+</body>
+</html>
